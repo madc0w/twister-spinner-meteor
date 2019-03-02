@@ -8,7 +8,8 @@
 		"visualize": "meteor --production --extra-packages bundle-visualizer"
 	},
 	"dependencies": {
-		"@babel/runtime": "^7.1.5",
-		"meteor-node-stubs": "^0.4.1"
+		"@babel/runtime": "^7.3.4",
+		"meteor-node-stubs": "^0.4.1",
+		"phonegap-plugin-speech-synthesis": "^0.1.1"
 	}
 }

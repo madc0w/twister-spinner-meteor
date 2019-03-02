@@ -1,7 +1,7 @@
 body {
 	font-family: Arial;
 	background-color: #ddd;
-	zoom: 3;
+	zoom: 1;
 }
 
 #main {
@@ -26,8 +26,9 @@ hr {
 
 #color-container {
 	height: 80px;
+	text-align: center;
 }
-	
+
 #color {
 	width: 60px;
 	height: 60px;
@@ -44,13 +45,12 @@ hr {
 #instruction {
 	font-weight: bold;
 	font-size: 20px;
-/* 	text-align: center; */
+	/* 	text-align: center; */
 	padding-bottom: 8px;
 }
 
 #container {
 	margin-top: 20px;
-	width: 200px;
 }
 
 #controls {

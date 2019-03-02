@@ -1,4 +1,89 @@
 body {
-	padding: 10px;
-	font-family: sans-serif;
+	font-family: Arial;
+	background-color: #ddd;
+	zoom: 3;
+}
+
+#main {
+	margin: 22px;
+}
+
+hr {
+	height: 2px;
+	background-color: #d22828;
+}
+
+#spin-button {
+	width: 100px;
+	border-radius: 6px;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	padding: 8px;
+	background-color: #d22828;
+	cursor: pointer;
+}
+
+#color-container {
+	height: 80px;
+}
+	
+#color {
+	width: 60px;
+	height: 60px;
+	margin: 10px;
+	margin-left: 22px;
+	border-radius: 60px;
+	border-width: 4px;
+	border-style: solid;
+	border-color: black;
+	display: inline-block;
+	background-color: white;
+}
+
+#instruction {
+	font-weight: bold;
+	font-size: 20px;
+/* 	text-align: center; */
+	padding-bottom: 8px;
+}
+
+#container {
+	margin-top: 20px;
+	width: 200px;
+}
+
+#controls {
+	display: inline-flex;
+}
+
+#continuous-checkbox-container {
+	padding-top: 8px;
+	padding-left: 12px;
+}
+
+#interval-container {
+	display: none;
+	padding-top: 8px;
+	padding-left: 12px;
+}
+
+#timer {
+	display: none;
+	margin-top: -4px;
+	border-radius: 4px;
+	height: 12px;
+	width: 60%;
+	background-color: #222;
+}
+
+#current-time {
+	background-color: #d22828;
+	border-radius: 4px;
+	width: 0px;
+	height: 12px;
+}
+
+#num-players {
+	margin-top: 4px;
 }

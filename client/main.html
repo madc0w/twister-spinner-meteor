@@ -1,21 +1,41 @@
-<head>
-  <title>Minimal Meteor app</title>
-</head>
-
 <body>
-  <h1>Minimal Meteor app</h1>
-  <p>
-    This Meteor app uses as few Meteor packages as possible, to keep the
-    client JavaScript bundle as small as possible.
-  </p>
-
-  <em id="server-render-target"></em>
-
-  <h2>Learn Meteor!</h2>
-  <ul>
-    <li><a href="https://www.meteor.com/try" target="_blank">Do the Tutorial</a></li>
-    <li><a href="http://guide.meteor.com" target="_blank">Follow the Guide</a></li>
-    <li><a href="https://docs.meteor.com" target="_blank">Read the Docs</a></li>
-    <li><a href="https://forums.meteor.com" target="_blank">Discussions</a></li>
-  </ul>
+	{{> main}}
 </body>
+
+<template name="main">
+	<div id="main">
+		<div id="controls">
+			<div id="spin-button" >Spin!</div>
+			<div id="continuous-checkbox-container">
+				<input id="continuous-checkbox" type="checkbox" />
+				<label for="continuous-checkbox">Continuous</label>
+			</div>
+			<div id="interval-container">
+				<input size="1" maxlength="2" id="interval" type="text"/>
+				<label for="interval">Interval (secs)</label>
+			</div>
+		</div>
+		<div id="num-players-container">
+			<label for="num-players">Number of players</label>
+			<select id="num-players" onChange="numPlayersChange();">
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+				<option>5</option>
+				<option>6</option>
+			</select>
+		</div>
+		<hr/>
+		<div id="container">
+			<div id="instruction">&nbsp;</div>
+			<div id="color-container">
+				<div id="color"></div>
+			</div>
+			<div id="timer">
+				<div id="current-time"></div>
+			</div>
+		</div>
+	</div>
+</template>
+
